@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		table {
+		    border-collapse: collapse;
+		    border-spacing: 0;
+		    width: 100%;
+		    border: 1px solid #ddd;
+		}
+
+		th, td {
+		    text-align: left;
+		    padding: 8px;
+		}
+
+		tr:nth-child(even){background-color: #f2f2f2}
+
+
+			.collapsible {
+			    background-color: #777;
+			    color: white;
+			    cursor: pointer;
+			    padding: 18px;
+			    width: 100%;
+			    border: none;
+			    text-align: left;
+			    outline: none;
+			    font-size: 15px;
+			}
+
+			.active, .collapsible:hover {
+			    background-color: #555;
+			}
+
+			.content {
+			    padding: 0 18px;
+			    display: none;
+			    overflow: hidden;
+			    background-color: #f1f1f1;
+			}
+
+			table:active{
+					  color: blue;
+					}
+
+					button:active{
+					  color: blue;
+					}
+
+		</style>
+	<title>Th prices and details of threewheel neat to NSBM</title>
+</head>
+<body>
+	<div style="overflow-x:auto;">
+		<table align="center" border="1">
+			<th>Destination(from NSBM)</th>
+			<th>The fee</th>
+			<tr>
+				<td>School Junction</td>
+				<td>Rs.90/=</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+	</div>
+
+	<button class="collapsible"><h6 align="center">Click hear to get three wheels number</h6></button>
+<div class="content">
+  <table border="5">
+  		<tr>
+  			<td>twheel1</td>
+  			<td>number1</td>
+  		</tr>
+  		<tr>
+  			<td>twheel2</td>
+  			<td>number2</td>
+  		</tr>
+  		<tr>
+  			<td>twheel3</td>
+  			<td>number3</td>
+  		</tr>
+	</table>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
